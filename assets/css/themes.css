@@ -1,0 +1,104 @@
+/* =========================================================
+   Theme tokens — 7 themes × Light/Dark = 14 palettes.
+   Every theme defines: --bg --bg-alt --surface --text
+   --text-muted --border --border-strong --accent --accent-2
+   --on-accent
+   ========================================================= */
+
+/* ---------------- Royal Blue ---------------- */
+[data-theme="royal-blue"][data-mode="dark"]{
+  --bg:#080c1a; --bg-alt:#0e1428; --surface:#121a30;
+  --text:#eef1ff; --text-muted:#9aa4c7;
+  --border:#1e2947; --border-strong:#2c3a63;
+  --accent:#3b5bfd; --accent-2:#7c9bff; --on-accent:#ffffff;
+}
+[data-theme="royal-blue"][data-mode="light"]{
+  --bg:#f5f7fe; --bg-alt:#eceffb; --surface:#ffffff;
+  --text:#121a33; --text-muted:#59628a;
+  --border:#dde3f7; --border-strong:#c3ccef;
+  --accent:#2942d1; --accent-2:#5470ff; --on-accent:#ffffff;
+}
+
+/* ---------------- Emerald Green ---------------- */
+[data-theme="emerald-green"][data-mode="dark"]{
+  --bg:#06140f; --bg-alt:#0a1e17; --surface:#0f2a20;
+  --text:#e7fbf1; --text-muted:#8fbaa5;
+  --border:#173d2d; --border-strong:#20563f;
+  --accent:#10b981; --accent-2:#34d399; --on-accent:#04140d;
+}
+[data-theme="emerald-green"][data-mode="light"]{
+  --bg:#f1faf5; --bg-alt:#e5f5eb; --surface:#ffffff;
+  --text:#0b2318; --text-muted:#4d7364;
+  --border:#d3ecdd; --border-strong:#b3ddc4;
+  --accent:#059669; --accent-2:#10b981; --on-accent:#ffffff;
+}
+
+/* ---------------- Purple Luxury ---------------- */
+[data-theme="purple-luxury"][data-mode="dark"]{
+  --bg:#120a1e; --bg-alt:#1b0f2b; --surface:#241436;
+  --text:#f4ecff; --text-muted:#b09bd0;
+  --border:#33204a; --border-strong:#472c66;
+  --accent:#a855f7; --accent-2:#e879f9; --on-accent:#160a22;
+}
+[data-theme="purple-luxury"][data-mode="light"]{
+  --bg:#faf5ff; --bg-alt:#f1e6fc; --surface:#ffffff;
+  --text:#24123a; --text-muted:#6f5a8c;
+  --border:#e5d3f7; --border-strong:#cfb0ec;
+  --accent:#8b2fd1; --accent-2:#b544e0; --on-accent:#ffffff;
+}
+
+/* ---------------- Ocean Cyan ---------------- */
+[data-theme="ocean-cyan"][data-mode="dark"]{
+  --bg:#04141a; --bg-alt:#082029; --surface:#0c2b36;
+  --text:#e2fbff; --text-muted:#82b3c0;
+  --border:#123c49; --border-strong:#195468;
+  --accent:#06b6d4; --accent-2:#22d3ee; --on-accent:#03151a;
+}
+[data-theme="ocean-cyan"][data-mode="light"]{
+  --bg:#eefbfd; --bg-alt:#dff5f9; --surface:#ffffff;
+  --text:#062a30; --text-muted:#3e7581;
+  --border:#c9edf3; --border-strong:#a3dfe9;
+  --accent:#0891b2; --accent-2:#06b6d4; --on-accent:#ffffff;
+}
+
+/* ---------------- Crimson Red ---------------- */
+[data-theme="crimson-red"][data-mode="dark"]{
+  --bg:#170606; --bg-alt:#210a0b; --surface:#2c1112;
+  --text:#ffeceb; --text-muted:#cf9c9a;
+  --border:#421a1a; --border-strong:#5c2222;
+  --accent:#dc2626; --accent-2:#f87171; --on-accent:#ffffff;
+}
+[data-theme="crimson-red"][data-mode="light"]{
+  --bg:#fff4f3; --bg-alt:#fce6e5; --surface:#ffffff;
+  --text:#350a0c; --text-muted:#8a4f4f;
+  --border:#f6d2d1; --border-strong:#eeb2b0;
+  --accent:#b91c1c; --accent-2:#dc2626; --on-accent:#ffffff;
+}
+
+/* ---------------- Golden Premium ---------------- */
+[data-theme="golden-premium"][data-mode="dark"]{
+  --bg:#120e08; --bg-alt:#1c160a; --surface:#26200f;
+  --text:#fff3d6; --text-muted:#c2ab7c;
+  --border:#3a2e14; --border-strong:#52411c;
+  --accent:#d4a017; --accent-2:#f2c94c; --on-accent:#140f04;
+}
+[data-theme="golden-premium"][data-mode="light"]{
+  --bg:#fffaf0; --bg-alt:#faf0d8; --surface:#ffffff;
+  --text:#2b2107; --text-muted:#7c6a3a;
+  --border:#f0e0b0; --border-strong:#e2c885;
+  --accent:#b8860b; --accent-2:#d4a017; --on-accent:#ffffff;
+}
+
+/* ---------------- Modern Monochrome ---------------- */
+[data-theme="modern-monochrome"][data-mode="dark"]{
+  --bg:#0b0b0b; --bg-alt:#151515; --surface:#1c1c1c;
+  --text:#f5f5f5; --text-muted:#9a9a9a;
+  --border:#2a2a2a; --border-strong:#3d3d3d;
+  --accent:#f5f5f5; --accent-2:#a3a3a3; --on-accent:#0b0b0b;
+}
+[data-theme="modern-monochrome"][data-mode="light"]{
+  --bg:#fafafa; --bg-alt:#efefef; --surface:#ffffff;
+  --text:#111111; --text-muted:#666666;
+  --border:#e2e2e2; --border-strong:#cfcfcf;
+  --accent:#111111; --accent-2:#4d4d4d; --on-accent:#ffffff;
+}
