@@ -267,6 +267,7 @@ h1,h2,h3{ font-family: var(--font-display); font-weight: 600; margin:0; letter-s
 }
 .stat-card:hover{ transform: translateY(-6px); border-color: transparent; }
 .stat-card__num-row{ display:flex; align-items:baseline; justify-content:center; gap:2px; }
+.stat-card:first-child .stat-card__num-row{ justify-content:flex-start; }
 .stat-card__num{ display:block; font-family: var(--font-display); font-size: 2.1rem; color: var(--accent); }
 .stat-card__plus{ font-family: var(--font-display); font-size: 1.5rem; font-weight:700; color: var(--accent); }
 .stat-card__label{ font-size:.85rem; color: var(--text-muted); }
