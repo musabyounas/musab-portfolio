@@ -298,6 +298,48 @@
     });
   }
 
+  /* ---------------- Certificate modal ---------------- */
+  function initCertModal() {
+    var modal = document.getElementById('certModal');
+    var img = document.getElementById('certModalImage');
+    var caption = document.getElementById('certModalTitle');
+    if (!modal || !img) return;
+
+    var lastFocused = null;
+
+    function openModal(src, title) {
+      lastFocused = document.activeElement;
+      img.src = src;
+      img.alt = title || 'Certificate';
+      caption.textContent = title || '';
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      img.src = '';
+      if (lastFocused) lastFocused.focus();
+    }
+
+    document.querySelectorAll('.cert-view-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        openModal(btn.getAttribute('data-cert-src'), btn.getAttribute('data-cert-title'));
+      });
+    });
+
+    modal.querySelectorAll('[data-cert-close]').forEach(function (el) {
+      el.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+  }
+
   /* ---------------- Init ---------------- */
   document.addEventListener('DOMContentLoaded', function () {
     initTheme();
@@ -311,5 +353,6 @@
     initCursorGlow();
     initTyping();
     initProjectFilter();
+    initCertModal();
   });
 })();
